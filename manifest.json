@@ -1,0 +1,13 @@
+{
+  "name": "foePlugin",
+  "description": "foePlugin for Bot",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "configuration": "background.html"
+  },
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
