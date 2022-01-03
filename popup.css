@@ -1,0 +1,9 @@
+body {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-header{
+    border-radius: 0;
+}

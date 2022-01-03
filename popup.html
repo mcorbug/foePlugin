@@ -1,9 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="button.css">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>AdminLTE 3 | General Form Elements</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback"
+          rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <!-- Theme style -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0-rc/css/adminlte.min.css" rel="stylesheet">
+
+    <!-- Custom style -->
+    <link href="popup.css" rel="stylesheet">
+
 </head>
 <body>
-<button id="changeColor"></button>
+<div class="card card-lightblue">
+    <div class="card-header">
+        <h3 class="card-title">FOE Plugin v1.0</h3>
+    </div>
+    <!-- /.card-header -->
+    <!-- form start -->
+    <form>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="userKey">User Key</label>
+                <input class="form-control" id="userKey">
+            </div>
+            <div class="form-group">
+                <label for="sid">SID</label>
+                <input class="form-control" id="sid">
+            </div>
+        </div>
+        <!-- /.card-body -->
+
+        <div class="card-footer">
+            <button id="bot" class="btn btn-outline-dark" type="submit">Start Bot</button>
+            <button id="monitor" class="btn btn-outline-dark" type="submit">Start Monitor</button>
+        </div>
+    </form>
+</div>
+<script src="popup.js"></script>
 </body>
 </html>

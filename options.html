@@ -1,0 +1,248 @@
+<html lang="en" style="height: auto;"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FOE Bot - Options</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback"
+          rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <!-- Theme style -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0-rc/css/adminlte.min.css" rel="stylesheet">
+</head>
+<body class="layout-top-nav" style="height: auto;">
+<div class="wrapper">
+    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="icons/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8; height: 75px">
+            </a>
+        </div>
+    </nav>
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+        <div class="container">
+            <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+                <!-- Left navbar links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Options</a>
+                    </li>
+
+                </ul>
+
+                <!-- SEARCH FORM -->
+
+            </div>
+
+            <!-- Right navbar links -->
+            <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+
+                <!-- Notifications Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-bell"></i>
+                        <span class="badge badge-warning navbar-badge">15</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-header">15 Notifications</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i> 4 new messages
+                            <span class="float-right text-muted text-sm">3 mins</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-users mr-2"></i> 8 friend requests
+                            <span class="float-right text-muted text-sm">12 hours</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-file mr-2"></i> 3 new reports
+                            <span class="float-right text-muted text-sm">2 days</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0"> Options: <small> customize your Bot Settings</small></h1>
+                    </div><!-- /.col -->
+
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+
+        <!-- Main content -->
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card card-navy">
+                            <div class="card-header">
+                                <h3 class="card-title">General Settings</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <!-- form start -->
+                            <form style="margin-bottom: 0px">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="PythonFolder">Folder of Python.exe (In Case Path Var is not set)</label>
+                                        <input type="text" class="form-control" id="PythonFolder" placeholder="Folder Path">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="BotFolder">Installation Folder of FOE-Bot</label>
+                                        <input type="text" class="form-control" id="BotFolder" placeholder="Folder Path">
+                                    </div>
+                                </div>
+                                </form>
+                        </div>
+                        <div class="card card-navy">
+                            <div class="card-header">
+                                <h3 class="card-title">Game Settings</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <!-- form start -->
+                            <form style="margin-bottom: 0px">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="Server">Server</label>
+                                        <input type="text" class="form-control" id="Server" placeholder="server">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="version">Version</label>
+                                        <input type="text" class="form-control" id="version" placeholder="Version of the game">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="secret">Version Secret</label>
+                                        <input type="text" class="form-control" id="secret" placeholder="secret">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /.col-md-6 -->
+                    <div class="col-lg-6">
+                        <div class="card card-navy">
+                            <div class="card-header">
+                                <h3 class="card-title">General Settings</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <!-- form start -->
+                            <form style="margin-bottom: 0px">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <!-- text input -->
+                                            <div class="form-group">
+                                                <label>Interval Minimum (seconds)</label>
+                                                <input id ="MinInt" type="text" class="form-control" placeholder="seconds ...">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <!-- text input -->
+                                            <div class="form-group">
+                                                <label>Interval Maximum (seconds)</label>
+                                                <input id ="MaxInt" type="text" class="form-control" placeholder="seconds ...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label>Polivate</label>
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="friends" value="option1">
+                                                <label for="friends" class="custom-control-label">friends</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="guild" value="option1">
+                                                <label for="guild" class="custom-control-label">guild</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="neighbours" value="option1">
+                                                <label for="neighbours" class="custom-control-label">neighbours</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label>resources</label>
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="coins" value="option1">
+                                                <label for="coins" class="custom-control-label">coins</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="supplies" value="option1">
+                                                <label for="supplies" class="custom-control-label">supplies</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="random" value="option1">
+                                                <label for="random" class="custom-control-label">random</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="goods" value="option1">
+                                                <label for="goods" class="custom-control-label">goods</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-top: 50px">
+                                        <div class="col-sm-6">
+                                            <label>Tavern</label>
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="sit" value="option1">
+                                                <label for="sit" class="custom-control-label">sit</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="collect" value="option1">
+                                                <label for="collect" class="custom-control-label">collect</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>The % of seats that should be in use before the bot collects the silver</label>
+                                                <input id="threshold" type="text" class="form-control" placeholder="percentage">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <!-- /.card-body -->
+                                <div class="card-footer">
+                                    <button type="submit" class="btn btn-dark">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /.col-md-6 -->
+                </div>
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+</div>
+
+<script type="module" src="option.js"></script>
+
+</body></html>
