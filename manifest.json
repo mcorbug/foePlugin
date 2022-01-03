@@ -2,12 +2,12 @@
   "name": "foePlugin",
   "description": "foePlugin for Bot",
   "version": "1.0",
-  "manifest_version": 3,
+  "manifest_version": 2,
   "background": {
-    "configuration": "background.html"
+    "service_worker": "background.js"
   },
-  "permissions": ["storage"],
-  "action": {
-    "default_popup": "popup.html"
-  }
+  "permissions": [
+    "webRequest",
+    "*://*.forgeofempires.com/"
+  ]
 }

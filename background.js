@@ -1,8 +1,10 @@
 // background.js
 
-let color = '#3aa757';
+chrome.webRequest.onCompleted.addListener(function(details) {
+        if(details.url.includes("forgeofempires.com/game/json")){
+            console.log("=>" + details.url)
+        }
+    },
+    {urls: ["<all_urls>"]}
+);
 
-chrome.runtime.onInstalled.addListener(() => {
-    chrome.storage.sync.set({ color });
-    console.log('Default background color set to %cgreen', `color: ${color}`);
-});
