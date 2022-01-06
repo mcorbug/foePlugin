@@ -1,3 +1,6 @@
-do not read me
+## How to install
 
-[Goto Extension](chrome://extensions/)
+- download and unzip Code
+- goto chrome://extensions/
+- enable Developer mode
+- load unpacked => select folder of uncompressed code
