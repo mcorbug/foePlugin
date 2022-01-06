@@ -1,7 +1,7 @@
 export const config = {
     "path": {
         "bot": "C:\\Users\\Cor Bach\\Desktop\\foe-bot",
-        "python": "C:\\Users\\Cor Bach\\AppData\\Local\\Programs\\Python\\Python37-32"
+        "python": "C:\\Python310"
     },
     "game": {
         "server": "de11",

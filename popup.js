@@ -1,5 +1,7 @@
 // popup.js
 
+import {config} from "./config.js";
+
 const botButton = document.getElementById("bot") ;
 const monitorButton = document.getElementById("monitor");
 
@@ -7,11 +9,20 @@ const userKeyInput = document.getElementById("userKey")
 const sidInput = document.getElementById("sid")
 
 botButton.addEventListener('click', function (){
-    download('test.bat', userKeyInput + "\n" + sidInput );
+    download('bot.bat',
+        '@echo off\n' +
+        'cd "'+ config.path.bot + '"\n' +
+        '"' + config.path.python +'\\python" main.py --userKey ' + userKeyInput.value + " --sid " + sidInput.value + "\n" +
+        "pause"
+    );
 });
 
 monitorButton.addEventListener('click', function (){
-    download('test.txt', 'Moinitor clicked');
+    download('monitor.bat',
+        '@echo off\n' +
+        'cd "'+ config.path.bot + '"\n' +
+        '"' + config.path.python +'\\python" monitor.py'
+    );
 });
 
 function download(filename, text) {
@@ -29,7 +40,13 @@ function download(filename, text) {
 
 window.onload = function() {
     chrome.runtime.sendMessage({ method: "getValues" }, function(response) {
-        userKeyInput.value =  response['userKey']
-        sidInput.value =  response['sid']
+        if(typeof(response['userKey']) !== "undefined" && typeof(response['userKey']) !== "undefined") {
+            userKeyInput.value =  response['userKey']
+            sid.value =  response['sid']
+            // chrome.action.setBadgeText({text: "1"}).then(r => console.log(r));
+        } else {
+            // chrome.action.setBadgeText({text: ""}).then(r => console.log(r));
+        }
+
     });
 }

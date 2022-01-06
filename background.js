@@ -24,9 +24,11 @@ chrome.webRequest.onSendHeaders.addListener(function (details) {
 //Get message from content script
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
-        sendResponse({
-            "sid": sid,
-            "userKey": user_key
-        });
+        if(request['method'] === "getValues"){
+            sendResponse({
+                "sid": sid,
+                "userKey": user_key
+            });
+        }
     }
 );

@@ -6,8 +6,9 @@
     <title>AdminLTE 3 | General Form Elements</title>
 
     <!-- Google Font: Source Sans Pro -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback"
-          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
     <!-- Theme style -->
@@ -17,8 +18,8 @@
     <link href="popup.css" rel="stylesheet">
 
 </head>
-<body>
-<div class="card card-lightblue">
+<body class="dark-mode">
+<div class="card card-primary">
     <div class="card-header">
         <h3 class="card-title">FOE Plugin v1.0</h3>
     </div>
@@ -38,11 +39,11 @@
         <!-- /.card-body -->
 
         <div class="card-footer">
-            <button id="bot" class="btn btn-outline-dark" type="submit">Start Bot</button>
-            <button id="monitor" class="btn btn-outline-dark" type="submit">Start Monitor</button>
+            <button id="bot" class="btn btn-primary" type="submit">Start Bot</button>
+            <button id="monitor" class="btn btn-primary" type="submit">Start Monitor</button>
         </div>
     </form>
 </div>
-<script src="popup.js"></script>
+<script type="module" src="popup.js"></script>
 </body>
 </html>
